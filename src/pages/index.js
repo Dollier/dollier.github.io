@@ -1,8 +1,10 @@
 import React from "react"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faGithub } from "@fortawesome/free-brands-svg-icons"
+import { faGithub, faLinkedin, faTwitter } from "@fortawesome/free-brands-svg-icons"
 import { useInView } from "react-intersection-observer"
 import FadeInSection from "../utils/FadeinSection"
+
+import Test from "../components/Home";
 
 let inViewTrigger = 0
 export default function Home() {
@@ -33,7 +35,8 @@ export default function Home() {
           <div>Fullstack Developer</div>
           <div className="social-media">
             <FontAwesomeIcon icon={faGithub} size="2x" color="#17171d" />
-            <FontAwesomeIcon icon={faGithub} size="2x" color="#17171d" />
+            <FontAwesomeIcon icon={faLinkedin} size="2x" color="#17171d" />
+            <FontAwesomeIcon icon={faTwitter} size="2x" color="#17171d" />
           </div>
         </div>
         <div className="productBg">
@@ -46,6 +49,9 @@ export default function Home() {
           <div className="projects-title">Projects</div>
         </FadeInSection>
       </section>
+      {/* <section className="testing">
+      <Test />
+      </section> */}
       {/* <section className="cv">CV</section>
       <section className="blog">Blog</section> */}
     </div>
